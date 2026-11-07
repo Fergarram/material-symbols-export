@@ -28,6 +28,10 @@ BUILD
 	.venv/bin/python build.py --style sharp --all --fill --out <dir>
 	writes <dir>/sharp/<name>.tsx and <name>-filled.tsx
 
+	--format svg writes plain <name>.svg files instead, one path in the
+	same viewBox, for use as <img>, css mask or background:
+	.venv/bin/python build.py --style sharp --all --format svg --out <dir>
+
 USE
 	Names are the codepoints file names. Files are kebab-case, components
 	are Icon + PascalCase (Icon prefix keeps 10k and 3d_rotation valid),
